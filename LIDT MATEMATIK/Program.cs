@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace LIDT_MATEMATIK
 {
-    class Program
+    class Program0
     {
         static void Main(string[] args)
         {
+            #region Opg 1
             Console.WriteLine("Indsæt heltal (A)");
             int userInputA = Convert.ToInt32(Console.ReadLine());
 
@@ -20,10 +21,10 @@ namespace LIDT_MATEMATIK
             Console.WriteLine($"Division = {Division(userInputA, userInputB)}");
             Console.WriteLine($"Modulus = {Modulus(userInputA, userInputB)}");
             Console.WriteLine($"Potency = {Potency(userInputA, userInputB)}");
-
+            #endregion
             Console.ReadKey();
         }
-
+        #region Opg 1
         static int Addition(int userInputA, int userInputB)
         {
             return userInputA + userInputA;
@@ -41,5 +42,6 @@ namespace LIDT_MATEMATIK
             //Can't Convert 2^3!
             return (int)Math.Pow(userInputB, userInputB);
         }
+        #endregion
     }
 }
